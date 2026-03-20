@@ -1,0 +1,11 @@
+name: hello git demo
+on:
+  push:
+    branches:
+      - main
+jobs:
+  build_job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: its trail
+        run: echo "hello ram"
