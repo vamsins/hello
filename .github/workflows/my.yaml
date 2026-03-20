@@ -9,3 +9,9 @@ jobs:
     steps:
       - name: its trail
         run: echo "hello ram"
+  build_jo1:
+  needs: build_job
+    runs-on: ubuntu-latest
+    steps:
+      - name: its trail
+        run: echo "hello ram"
