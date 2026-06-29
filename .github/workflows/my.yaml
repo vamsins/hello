@@ -1,5 +1,7 @@
 name: hello git demo
 on:
+  schedule:
+    - cron: '0/2 0 * * *'
   push:
     branches:
       - main
