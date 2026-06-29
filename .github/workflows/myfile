@@ -1,4 +1,4 @@
-name: my first github pipeline
+name: my first github pipeline with branch1
 
 on:
   workflow_dispatch:
