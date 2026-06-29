@@ -6,5 +6,8 @@ jobs:
     steps:
       - name: hello  world
         run: echo "hello world"
+      - name: list
+        run: ls -a
+       
   
 
