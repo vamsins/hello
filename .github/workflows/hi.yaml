@@ -6,6 +6,8 @@ jobs:
     steps:
       - name: hello  world
         run: echo "hello world"
+      - name: ckeckout background
+        uses: actions/checkout@v4
       - name: list
         run: ls -a
        
