@@ -1,5 +1,5 @@
 name: my fiest githgub pipeline
-on: workflow_dispatch
+on: workflow_dispatch:
 jobs:
   hello:
     runs-on: ubuntu-latest
