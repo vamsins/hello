@@ -1,5 +1,8 @@
 name: my fiest githgub pipeline
 on: 
+  push:
+    branches:
+      - branch1
   workflow_dispatch:
 jobs:
   hello:
