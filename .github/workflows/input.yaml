@@ -1,0 +1,17 @@
+name: "input message concurrency"
+on:
+  workflow_dispatch:
+    inputs:
+      myinput:
+        description: "env deploy input"
+        required: true
+        type: choice
+        options:
+          - staging
+          - production
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: print env
+        run: echo " deply to ${{inputs.myinput}}"
