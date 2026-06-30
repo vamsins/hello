@@ -9,9 +9,17 @@ on:
         options:
           - staging
           - production
+      deployversion:
+        description: "here I am mentioning the deploy version"
+        required: true
+        type: number
+        
 jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
+      
       - name: print env
         run: echo " deply to ${{inputs.myinput}}"
+      - name: print version
+        run: echo "deploy version is $ {{inputs.deployversion}}"
