@@ -27,4 +27,4 @@ jobs:
       - name: print version
         run: echo "deploy version is $ {{inputs.deployversion}}"
       - name: echo deploy type
-        run: echo "deploy type is $ {{inputs.deploytype}}
+        run: echo "deploy type is ${{inputs.deploytype}}"
