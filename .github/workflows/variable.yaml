@@ -1,0 +1,20 @@
+name: variable file
+on:
+  workflow_dispatch: 
+env: 
+  app_name: my app
+jobs:
+  var-job:
+    runs-on: ubuntu-latest
+    env:
+      app_owner: vamsi
+    steps:
+      - name:  this mi for varaibale
+        env:
+          app_location: bngl
+        run: |
+            echo " app-name: $app_name"
+            echo "app-owner: $app_owner"
+            echo " app location $app_location"
+       
+  
