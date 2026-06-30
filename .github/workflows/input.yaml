@@ -13,7 +13,10 @@ on:
         description: "here I am mentioning the deploy version"
         required: true
         type: number
-        
+      deploytype:
+        description: "here I am mentioning the deploy version"
+        required: true
+        type: string
 jobs:
   deploy:
     runs-on: ubuntu-latest
@@ -23,3 +26,5 @@ jobs:
         run: echo " deply to ${{inputs.myinput}}"
       - name: print version
         run: echo "deploy version is $ {{inputs.deployversion}}"
+      - name: echo deploy type
+        run: echo "deploy type is $ {{inputs.deploytype}}
